@@ -41,23 +41,42 @@ struct ContentView: View {
                                 .foregroundStyle(.white)
                         }
                         //text field
-                        
+                        Text("Text Field")
                     }
                     //equal sign
+                    Image(systemName: "equal")
+                        .font(.largeTitle)
+                        .foregroundStyle(.white)
+                        .symbolEffect(.pulse)
                     
                     //right conversion
                     VStack {
                         //currency
                         HStack {
                             //currency text
-                            
+                            Text("Gold Piece")
+                                .font(.headline)
+                                .foregroundStyle(.white)
                             //Currency image
+                            Image(.goldpiece)
+                                .resizable()
+                                .scaledToFit()
+                                .frame(height: 30)
                         }
                         //text field
+                        Text("Text Field")
                     }
                 }
+                
+                Spacer()
+                
                 //Info button
+                Image(systemName: "info.circle.fill")
+                    .font(.largeTitle)
+                    .foregroundStyle(.white)
+                    
             }
+//            .border(.blue)
         }
     }
 }
